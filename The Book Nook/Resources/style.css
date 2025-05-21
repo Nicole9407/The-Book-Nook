@@ -1,0 +1,130 @@
+body {
+    background-color: #36454F;
+    color: #FFD700;
+}
+
+header {
+    background-color: #28333B;
+    color: #FFD700;
+    padding: 1em; /*Adds some space around the content */
+    text-align: center; /* Center the text within the header */
+}
+
+nav ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;  /* Arrange items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav li {
+    margin: 0 1em;   /* Add some horizontal space between links */
+}
+
+nav a {
+    color: #FFD700;  /* Set the text color to gold */
+    text-decoration: none; /* Remove the underline */
+}
+
+main h2 {
+    color: #B8860B;
+    margin-top: 2em;    /* Add space above */
+    margin-bottom: 1em; /* Add space below */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    border-bottom: 1px solid #4A5563;
+    border-top: #4A5563; 
+    padding: 2em 0; /* Adjust padding to top and bottom only */
+    margin-bottom: 2em; /* Add some margin below the section */
+}
+
+h3 {
+    color: #B8860B; /* Same color as the main h2 */
+    margin-top: 1.5em; /* Add some space above */
+    margin-bottom: 0.5em; /* Add a little space below */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Improves readability by adding space between lines */
+    margin-bottom: 1em;
+}
+
+#reading-nook img {
+    max-width: 75%; /* Adjust the size as needed */
+    border: 5px solid #4A5563; /* Use a color that fits our theme */
+    border-radius: 10px; /* Adjust for desired roundness */
+    margin: 1em auto; /* Center the image */
+    display: block; /* Required for centering with margin: auto; */
+}
+
+footer {
+    background-color: #28333B;
+    color: #FFD700;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em; /* Make the text a bit smaller, common for footers */
+}
+
+#contact-us a {
+    color: #FFD700; /* Our gold color */
+    text-decoration: none; /* Remove underline if you prefer */
+}
+
+#contact-us a:hover {
+    text-decoration: underline; /* Add underline on hover for better interaction */
+}#contact-us a {
+    color: #FFD700; /* Our gold color */
+    text-decoration: none; /* Remove underline if you prefer */
+}
+
+#contact-us a:hover {
+    text-decoration: underline; /* Add underline on hover for better interaction */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center;    /* Center the items horizontally */
+    }
+
+    nav li {
+        margin: 0.5em 0;       /* Add vertical spacing between links */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+
+    header h1 {
+        text-align: left; /* Left-align the main heading on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    #reading-nook img {
+        max-width: 90%; /* Make the image take up more of the width on small screens */
+    }
+}
